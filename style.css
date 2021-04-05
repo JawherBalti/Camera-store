@@ -1,0 +1,113 @@
+body{
+	background-color: #C7A792;
+	margin:0;
+	padding:0;
+	min-height:2000px;
+}
+
+
+/* Header*/
+.h1 {
+	font-size: 3em;
+	color:#000000;
+	font-family: 'Kaushan Script';
+	font-weight: 700;
+}
+/* navbar */
+#menuNavbar1{
+	margin-left: 1em;
+}
+#menuNavbar2{
+	margin-left: auto;
+}
+.navbar a {
+	font-family:'Lato';
+	font-weight: 600;
+}
+
+
+.bg-light{
+	background-color: #E8E2D3;
+}
+
+.card-body{
+	background-color: #E8E2D3;
+}
+.navColor{
+	background-color: #484848;
+	
+}
+/* change the text color */
+#menuNavbar1 a,#menuNavbar2 a, #menuFooter a{
+	color:white !important;
+}
+
+.card{
+	background-color: #E8E2D3;
+}
+
+html { font-size: 1rem; }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+	html { font-size: .5rem;}
+	
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	html { font-size: .75rem; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	html { font-size: 1rem; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	html { font-size: 1.3rem; } 
+}
+
+
+.table td{
+	background-color: #E8E2D3;
+	/*border-radius: 20px;*/
+}
+
+/* Pour tronquer le texte descriptif des articles de la pages d'accueil */
+.card-body p{
+overflow:hidden;
+
+}
+.pIndex{
+max-width:20rem;
+white-space:nowrap;
+text-overflow: ellipsis;
+}
+/* Fin de "Pour tronquer le texte descriptif des articles de la pages d'accueil" */
+
+
+/* Des couleurs vintages pour les boutons bootstrap */
+.btn-warning{
+	background-color:  #e7cf8a !important;
+	border-color:  #e7cf8a !important;
+}
+.btn-primary{
+	background-color:  #6c949f !important;
+	border-color:  #6c949f !important;
+}
+
+/* Panier*/
+.text-right {
+	text-align: right;
+}
+
+.sum{
+font-weight: 700;
+text-align: right;
+}
+#total{
+	font-weight: 700;
+	text-align: right;
+
+}

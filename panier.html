@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>   
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Polices de catactère -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+		<!--Font Awesome-->
+		<script src="https://kit.fontawesome.com/66b1bd1b5b.js" crossorigin="anonymous"></script>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="style.css" />
+		   <title>Commande Cameras Orinoco</title>
+	</head>
+
+	<body>
+
+		<!-- header, navigation et titre -->
+		<header id="top">
+
+			<div class="container">
+				<!-- Barre de Navigation-->
+				<nav class="navbar navbar-expand-md fixed-top navbar-dark navColor">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html"><img src="img\logo.png" width="60" height="40"
+								alt="Logo Orinoco" class="offset-6 rounded-circle" /></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div id="navbarSupportedContent" class="collapse navbar-collapse">
+							<ul class="navbar-nav mb-2 mb-lg-0" id="menuNavbar1">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="details.html">Commande</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav mb-2 mb-lg-0" id="menuNavbar2">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="panier.html"> Panier <span
+											class="fa fa-shopping-cart">
+										</span></a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main>
+			<div class="container">
+				<div class="row my-5 py-5">
+					<form id="myForm" class="col-12 col-md-6 col-lg-4">
+						<h3>Vos coordonnées</h3>
+						<!-- <p id="messageUser"><span></span></p> -->
+						<div class="form-group col-10 mt-5">
+							<label for="prenom">Prénom :</label>
+							<input type="text" class="form-control card mb-3" name="prenom" id="prenom">
+							<span id="prenom_manquant"></span>
+						</div>
+						<div class="form-group col-10">
+							<label for="nom">Nom :</label>
+							<input type="text" class="form-control card mb-3" name="nom" id="nom">
+							<span id="nom_manquant"></span>
+						</div>
+						<div class="form-group col-10">
+							<label for="adresse">Adresse :</label>
+							<input type="text" class="form-control card mb-3" name="adresse" id="adresse">
+							<span id="adresse_manquant"></span>
+						</div>
+						<div class="form-group col-10">
+							<label for="ville">Ville :</label>
+							<input type="text" class="form-control card mb-3" name="ville" id="ville">
+							<span id="ville_manquant"></span>
+						</div>
+						<div class="form-group col-10">
+							<label for="email">Email :</label>
+							<input class="form-control card mb-3" name="email" id="email">
+							<span id="email_manquant"></span>
+						</div>
+						<div class="form-group col-10">
+							<input id="myButton" class="btn btn-warning mt-4 mb-5 col-4 col-md-8 col-lg-12"
+								name="myButton" type="submit" value="Confirmer votre achat">
+						</div>
+					</form>
+
+					<!-- Les Cards -->
+					<div class="col-12 col-md-6 col-lg-8">
+
+						<h3>Votre commande</h3>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr class="text-nowrap">
+										<th>Produit</th>
+										<th>modèle</th>
+										<th>lentille</th>
+										<th>prix</th>
+										<th>quantité</th>
+										<th>Sous-total</th>
+										<th>Supprimer</th>
+									</tr>
+								</thead>
+								<tbody id="wrapper"></tbody>
+								<tfoot></tfoot>
+							</table>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<tr>
+									<td class="sum">Total :</td>
+									<td id="total"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!--Le footer-->
+		<footer>
+			<div class="container-fluid">
+				<div class="row mb-3 navColor">
+					<nav class="col-12 col-10-lg navbar navbar-expand-md navbar-dark navbar-full bg-company">
+						<ul id="menuFooter" class="footer navbar-nav mx-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">À propos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Mentions légales</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Conditions d'utilisations</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+			crossorigin="anonymous"></script>
+		<!-- Custom JS -->
+		<script src="panier.js" charset="utf-8"></script>
+
+	</body>
+
+</html>
